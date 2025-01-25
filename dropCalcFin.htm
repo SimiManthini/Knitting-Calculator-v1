@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knit Gauge Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Knitting Calculator</h1>
+  <h2>Calculated stitches:</h2>
+
+  <div class="image-container">
+    <img src="d2 copy.png" alt="Knitting Diagram" class="background-image">
+    <form class="form-overlay">
+        <!-- The new locations and calculated values will be inserted here -->
+        <input type="text" id="armhole_result" data_value="armhole" style="top: -81%; left: 73%; width:30px" class="input-box" readonly>
+        <input type="text" id="body_circ_result" data_value="body_circ" style="top: -2%; left: 51%; width:30px" class="input-box" readonly>
+        <input type="text" id="body_height_result" data_value="body_height" style="top: -56.5%; left: 45%; width:30px" class="input-box" readonly>
+        <input type="text" id="collar_width_result" data_value="collar_width" style="top: -47%; left: 24%; width:30px" class="input-box" readonly>
+        <input type="text" id="cuff_depth_result" data_value="cuff_depth" style="top: -77%; left: 8.3%; width:30px" class="input-box" readonly>
+        <input type="text" id="neck_depth_result" data_value="neck_depth" style="top: -69%; left: 51%; width:30px" class="input-box" readonly>
+        <input type="text" id="neck_width_result" data_value="neck_width" style="top: -95.5%; left: 56.5%; width:30px" class="input-box" readonly>
+        <input type="text" id="rib_length_result" data_value="rib_width" style="top: -42%; left: 25.2%; width:30px" class="input-box" readonly>
+        <input type="text" id="sleeve_length_result" data_value="sleeve_width" style="top: -95.5%; left: 33.5%; width:30px" class="input-box" readonly>
+  
+      </form>
+  </div>
+  <script>
+    // Retrieve the calculated values from localStorage
+    const armholeMult = localStorage.getItem('armholeRes');
+    const bodyCircMultiplied = localStorage.getItem('bodyCircRes');
+    const bodyHeightMultiplied = localStorage.getItem('bodyHeightRes');
+    const collarwMult = localStorage.getItem('collarWidthRes');
+    const cuffMult = localStorage.getItem('cuffDepthRes');
+    const neckdMult = localStorage.getItem('neckDepthRes');
+    const neckwMult = localStorage.getItem('neckWidthRes');
+    const ribMult = localStorage.getItem('ribLengthRes');
+    const sleeveMult = localStorage.getItem('sleeveLengthRes');
+
+    // Set the retrieved values in the appropriate inputs
+    document.getElementById('armhole_result').value = armholeMult;
+    document.getElementById('body_circ_result').value = bodyCircMultiplied;
+    document.getElementById('body_height_result').value = bodyHeightMultiplied;
+    document.getElementById('collar_width_result').value = collarwMult;
+    document.getElementById('cuff_depth_result').value = cuffMult;
+    document.getElementById('neck_depth_result').value = neckdMult;
+    document.getElementById('neck_width_result').value = neckwMult;
+    document.getElementById('rib_length_result').value = ribMult;
+    document.getElementById('sleeve_length_result').value = sleeveMult;
+
+  </script>
+
+</body>
+</html>

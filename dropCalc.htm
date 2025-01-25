@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knit Gauge Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Knitting Calculator</h1>
+  <h2>Input measurements and gauge:</h2>
+
+  <div class="image-container">
+    <img src="d2.png" alt="Knitting Diagram" class="background-image">
+    <form class="form-overlay">
+      <input type="text" id="armhole_depth" data_value="armhole_depth" style="top: -81%; left: 72.5%;" class="input-box">
+      <input type="text" id="body_circ" data_value="body_circ" style="top: -2%; left: 51%;" class="input-box">
+      <input type="text" id="body_height" data_value="body_height" style="top: -56.5%; left: 45%;" class="input-box">
+      <input type="text" id="collar_width" data_value="collar_width" style="top: -47%; left: 23.5%;" class="input-box">
+      <input type="text" id="cuff_depth" data_value="cuff_depth" style="top: -77%; left: 8.3%;" class="input-box">
+      <input type="text" id="neck_depth" data_value="neck_depth" style="top: -69%; left: 51%;" class="input-box">
+      <input type="text" id="neck_width" data_value="neck_width" style="top: -95.5%; left: 56%;" class="input-box">
+      <input type="text" id="rib_length" data_value="rib_length" style="top: -42%; left: 24.7%;" class="input-box">
+      <input type="text" id="sleeve_length" data_value="sleeve_length" style="top: -95.5%; left: 33%;" class="input-box">
+
+      <input type="text" id="rows" data_value="rows" style="top: -45%; left: 92%;" class="input-box">
+      <input type="text" id="cols" data_value="cols" style="top: -40.2%; left: 91.3%;" class="input-box">
+      
+      <button id="calculate-btn" disabled>Calculate</button>
+    </form>
+    
+  </div>
+  <script src="dropCalc.js"></script>
+
+</body>
+</html>
