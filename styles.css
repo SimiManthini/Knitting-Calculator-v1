@@ -64,8 +64,8 @@ h1 {
 
 .image-container {
   position: absolute;
-  width: 1244px; /* Fixed width matching your image dimensions */
-  height: 534px; /* Fixed height matching your image dimensions */
+  width: 1244px; 
+  height: 534px; 
   margin: 0 auto; /* Center the container */
 }
 
@@ -83,8 +83,8 @@ h1 {
 
 .input-box {
   position: absolute;
-  width: 1.2%; /* Adjust as needed */
-  height: 2.5%; /* Adjust as needed */
+  width: 1.2%;
+  height: 2.5%;
   transform: translate(-50%, -50%);
   padding: 2px;
   border: 2.5px solid #ccc;
